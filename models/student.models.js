@@ -5,32 +5,39 @@ let studentSchema = new Schema(
   {
     name: {
        type: String,
-       required: true
+       required: true,
+       trim: true
      },
     rollno: {
        type: String,
-       required: true
+       required: true,
+       trim: true
       },
       dateOfBirth: {
         type: Date,
-        required: true
+        required: true,
+        trim: true
       },
       level: {
         type: String,
-        required: true
+        required: true,
+        trim: true
       },
       section: {
         type: String,
-        required: true
+        required: true,
+        trim: true
       },
       gender: {
         type: String,
         enum: ["male", "female"],
-        required: true
+        required: true,
+        trim: true
       },
       fatherName: {
         type: String,
-        required: true
+        required: true,
+        trim: true
       },
       motherName: {
         type: String,
@@ -38,11 +45,13 @@ let studentSchema = new Schema(
       },
       address: {
         type: String,
-        required: true
+        required: true,
+        trim: true
       },
       contactNumber: {
         type: String,
-        required: true
+        required: true,
+        trim: true
       }
   },
   {
